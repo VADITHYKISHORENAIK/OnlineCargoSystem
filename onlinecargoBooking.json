@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "5fbece52-33ef-4a5a-8306-2414e141ba4e",
+		"name": "assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13632402"
+	},
+	"item": [
+		{
+			"name": "countryList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7575/api/assignment/countries/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7575",
+					"path": [
+						"api",
+						"assignment",
+						"countries",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertCountry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"country\":\"Sydney\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7575/api/assignment/insertCountries/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7575",
+					"path": [
+						"api",
+						"assignment",
+						"insertCountries",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCountry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"country\":\"Sydney\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7575/api/assignment/deleteCountries/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7575",
+					"path": [
+						"api",
+						"assignment",
+						"deleteCountries",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feedback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"Name\":\"Kishore\",\n\"Email\":\"kishorenaik553@gmail.com\",\n\"Message\":\"your website is nice\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7575/api/assignment/feedback/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7575",
+					"path": [
+						"api",
+						"assignment",
+						"feedback",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "slots",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"From\":\"India\",\n    \"To\": \"Japan\",\n    \"Date\": \"12/08/2022\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7575/api/assignment/slots/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7575",
+					"path": [
+						"api",
+						"assignment",
+						"slots",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Booking Api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"From\":\"Japan\",\n    \"To\": \"India\",\n    \"Date\": \"12/08/2022\",\n    \"Name\":\"Ravi Kumar\",\n    \"Email\":\"kishore@test.com\",\n    \"Phone\":\"8498848244\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7575/api/assignment/booking/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7575",
+					"path": [
+						"api",
+						"assignment",
+						"booking",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
